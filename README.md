@@ -119,3 +119,48 @@ This approach closely mirrors real-world cloud environments, where engineers oft
 
 
 
+## STEP 8 – TESTING THE WORKFLOW WITH SIMULATED TRAFFIC
+-	I connected to the private EC2 instance using the session manager
+-	I used the ping and curl command to simulate traffic to the internet on my EC2 instance
+-	I checked CloudWatch log and the log group was automatically created and the logs of the traffic was visible on CloudWatch
+
+
+
+![SIMULATE ](VL-IMGS/TEST-TRAFFIC.jpg)
+
+
+
+![LOG DISPLAY](VL-IMGS/LOG-DISPLAY.jpg)
+
+
+
+
+# CONCLUSION
+This project demonstrates how an existing AWS default VPC can be securely extended to support private workloads while maintaining visibility into outbound traffic. By combining NAT Gateways, VPC Flow Logs, it is possible to implement effective network monitoring without introducing third-party tools.
+The approach reflects real-world cloud security practices and provides a strong foundation for advanced monitoring, alerting, and SIEM integrations.
+
+
+
+## SECURITY AND OPERATIONAL USE CASES
+-	Detection of unexpected outbound traffic from private resources
+-	Early identification of potential data exfiltration attempts
+-	Visibility into failed or rejected connections
+-	Support for audits, compliance, and incident investigations 
+
+
+
+## WHAT I LEARNT
+-	Extending a default VPC for private networking
+-	Correct NAT Gateway placement and routing
+-	Connecting to private instances via session manager
+-	How to make a subnet private
+-	Understanding the correct use of IAM roles and the principles of least privilege
+-	Designing egress traffic monitoring for cloud security.
+
+
+
+
+# ROUGH WORK / GUIDE ON HOW I NAVIGATED THE PROJECT
+
+
+![ROUGH](VL-IMGS/ROUGH.jpg)
