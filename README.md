@@ -37,3 +37,6 @@ This approach closely mirrors real-world cloud environments, where engineers oft
 -	Selected a non-overlapping CIDR block within the default VPC address range
 -	Disabled auto-assignment of public IPv4 addresses for the subnet this ensured that resources launched in this subnet would not have direct internet access.
 -	I then edited the route table association of the subnet, removing its route to the internet gateway (IGW).
+
+
+![PRIVATE SUBNET](VL-IMGS/PRIVATESUB.jpg)
